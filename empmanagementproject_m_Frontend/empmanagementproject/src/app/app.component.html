@@ -1,0 +1,57 @@
+<div class="page-wrapper">
+
+    <!-- MENU SIDEBAR-->
+    <aside class="menu-sidebar d-none d-lg-block" style="background-color:rgb(7, 163, 166);">
+        <div class="logo" style="background-color:rgb(44, 53, 62);">
+          <a href="#">
+            <h3 style="font-family: cursive;color:white"><i>EmpMngSys</i></h3>
+          </a>
+        </div>
+        <div class="menu-sidebar-content js-scrollbar1">
+            <nav class="navbar-sidebar ">
+                <ul class="list-unstyled navbar-list">
+
+                    <li>
+                        <a href="login"><h4>Login</h4></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <!-- END MENU SIDEBAR-->
+    <!-- PAGE CONTAINER-->
+    <div class="page-container">
+        <!-- HEADER DESKTOP-->
+        <header class="header-desktop" style="background-color:rgb(44, 53, 62);">
+            <div class="section-content section-content-p30">
+                <div class="container-fluid" style="margin-top: fixed;">
+                    <div class="header-wrap">
+                        <form class="form-header" onsubmit="return false;" method="GET">
+                            <input class="au-input au-input-xl" type="text" name="search"
+                                placeholder="Search for employee ..." />
+                            <button class="au-btn-submit" style="background-color: rgb(7, 163, 166);;" type="submit">
+                                Search
+                            </button>
+                        </form>
+
+                    </div>
+                    <div class="account-wrap"></div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER DESKTOP-->
+
+        <!--Main content-->
+     <router-outlet></router-outlet>
+      </div>
+
+    </div>
+  <!-- End page container-->
+
+ <footer style="background-color:rgb(44, 53, 62);">
+    <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Help</a></li>
+    </ul>
+  </footer>
